@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>UNSTABLE PHOTOGRAPHY</title>
+	<style>
+
+		    
+		   
+
+		    h1{  
+               text-align:center;
+			   background-color: lightblue;
+			   color: black;
+		       padding-top: 25px;
+		       padding-bottom:25px;
+		       margin:-8px;}
+
+		    h3,form{text-align: center;}
+
+		    h3{cursor: pointer;}
+
+		   
+	        nav a:hover{padding-left: 5px;
+		            background-color: black;
+		            color: white;
+		            }
+             nav{  height: 5px;
+		           position: sticky;
+		           top: 0.1px;
+		            }
+
+		    nav a{padding: 7px;
+		        text-decoration: none;
+		         color: blue;}
+
+
+		    p{ padding-left: 6px; }    
+
+             /* login for  preset with id frma*/
+		    .lgn{display: none;    
+		         cursor: pointer;
+		         width: 30%;
+		         background-color: rgb(0,0,0);
+		         background-color: rgba(0,0,0,0.2);
+		         margin: auto; 
+		         text-align: center;} 
+
+
+
+             /* signup for preset with id frm*/
+		    .modal{display: none;
+
+		       cursor: pointer;
+		       width: 40%;
+		       background-color: rgb(0,0,0);
+		       background-color: rgba(0,0,0,0.2);
+		       margin: auto; } 
+
+
+            .close{cursor: pointer;
+                   font-size:29px;
+                   float:right;
+                   margin-top: -44px;
+                   margin-right: 13px;}
+		    
+		    .close:hover{color: rgb(254 14 1);
+		                 opacity: 1.4;}
+
+
+		    span{font-size: 12px;} 
+
+	
+
+		    input[type=textbox] ,input[type=password] 
+		       {height: 30px; 
+		        width: 250px;    }         
+
+            /* class kit is for home aboutus and contactus*/
+		    .kit{background-color: #ddd;
+		    	 display:block;
+		  	     margin: -10px; 
+		         padding-top: 10px;
+		         padding-bottom: 10px;
+		         padding-left: 6px
+		         padding-right: 7px; 
+		         }
+
+
+            /* here home is active page */
+		    .kit a.active{ background-color: #2196F3;
+		                color: white; }
+		    
+
+		    /* button is for both login and signup to get prset*/
+            button{background-color: rgb(60 179 113);
+			       color: white;
+			       border-radius: 25px;
+			       cursor: pointer;
+			       width: 140px;
+			       border: none;
+			       margin-bottom: 20px;
+			       padding-top: 6px;
+			       padding-bottom: 6px;
+			       }
+
+			button:hover{
+			background-color: rgb(59 196 118);
+		    color: white;} 
+
+
+
+            /* this is for copyright statement*/
+		    footer{ padding-left: 440px;
+			        color: grey; }
+
+			
+
+			a:hover{ color: red;}
+
+            /* fa is for like us button*/
+			.fa { padding-top:4px;
+                  padding-bottom:13px; 
+                  padding-right:10px;
+                  padding-left:5px;	 
+                  font-size: 30px;
+                  width: 20px;
+                  height: 10px;
+                  text-align: center;
+                  text-decoration: none;
+                  }
+
+            .fa:hover {opacity: 1.2;}
+        
+            
+
+            .fa-facebook{ background: rgb(137 128 128);
+                          color:white; 
+                          height:9px;
+                          font-size: 22px;
+                          padding-right: 2.9px;
+                          padding-left: 2.9px;
+                          padding-top: 3.6px;
+                         
+                           }
+
+
+            .fa-facebook:hover{ color: white;
+                            background:rgb(52 108 213);  }
+            
+            .fa-instagram {color:rgb(137 128 128);}
+                 
+
+            .fa-instagram:hover{ color: #dd2a7b; }
+
+            .fa-twitter{ color:rgb(137 128 128) ;
+                          margin: 5px 10px 5px 0.0001px;}
+                           
+
+            .fa-twitter:hover{ color: dodgerblue;
+                               background-color:white ; } 
+
+             /*  icon is class for like us*/                               
+            .icon{ text-decoration: none;
+                   float: right;
+                   margin: -7px;}
+                
+
+                /* image for sunset /sunrise...so on*/
+            .column{ float: left;
+                 width: 33%;
+                 padding:0.2px;
+                 margin-top: 3px; 
+                 text-decoration: none;
+                 }
+
+
+             /* for the title of image like sunrise/sunset  so on*/
+            .column h2{ margin-top:3px;
+            	       padding-left: 6px;
+                       }
+
+                        
+            
+
+            .column img{ border: 3px solid rgb(119 47 117);
+             margin: 1px 2px 2px 9px; }
+
+            .column img:hover{ border: 3px solid rgb( 212 17 196); } 
+                
+             /* esewa*/
+             h4 a{color: blue;}   
+    </style>
+            
+      
+</head>
+<body>
+	<div id="container">
+	   <h1> WELCOME TO THE UNSTABLE PHOTOGRAPHY !</h1><br>
+	<nav>
+		<div class="kit">
+	<a class="active" href="personalproject.html"> <b>HOME</b></a> 
+	<a  href="aboutus.html"><b>ABOUT US </b></a>
+	<a  href="contactus.html"><b>CONTACT US</b> </a>
+
+	<br>
+ </div> 
+ </nav><br><br>
+   
+      
+
+  
+	<h3><a onclick="document.getElementById('frma').style.display='block'" style="width:auto;"> Click Here and get a free preset for your photos!</a></h3>
+
+    
+	<div  id="frma"class="lgn" >
+         	<h2 style="padding-top:8px;">Log In</h2>
+         	
+		
+         
+
+         <section onclick="document.getElementById('frma').style.display='none'" class="close" title="Close">&times;</section>
+
+		<label style="margin-right: 209px;"><b>Email </b><br></label>
+
+		<input type="textbox" name="em" placeholder="Enter Your Email" id="gml" name="search" required><br><br>
+
+		
+		<datalist id="gml">
+			<option value="@gmail.com"></option>
+			<option value="@yahoo.com"></option>
+
+
+		</datalist>
+
+
+		<label style="margin-right: 185px;"><b>Password</b></label><br>
+
+		<input type="password"  id="myInput" placeholder="Enter Password"  required><br>
+
+         
+
+         <label style="margin-right: 130px;">
+		<input type="checkbox" onclick="myFunction()">
+			Show Password</label><br><br>
+			
+			<script>
+				function myFunction()
+				{
+					var x = document.getElementById("myInput");
+					if (x.type=="password") 
+					{
+						x.type="text";
+					}
+					else{ x.type="password";}
+				}
+			</script> 
+			
+		<button type="submit">Log In <a href="preset.html"></a></button><br>
+		  Not Registered?<a onclick="document.getElementById('frma').innerHTML= oa"; style="width: auto;"><b style="color: green"; onMouseOver="this.style.color='red'"; onmouseout="this.style.color='green'";>Create an account</b></a>
+
+
+		  <div class="modal" id="frm">
+			<h2>Sign up</h2>
+
+          <section onclick="document.getElementById('frm').style.display='none'" class="close" title="Close">&times;</section>
+
+
+
+           <label><b>Email </b></label><br>
+
+		<input type="textbox" name="em" placeholder="Enter Your Email"  list="gml" required><br><br>
+		<datalist id="gml">
+			<option value="@gmail.com"></option>
+			<option value="@yahoo.com"></option>
+
+
+		</datalist>
+
+
+		<label><b>Password</b></label><br>
+		<input type="password"  id="myInput" placeholder="Enter Password" required> <br>
+
+		<input type="checkbox" onclick="myFunction()">
+			Show Password<br><br>
+			
+			<script>
+				function myFunction()
+				{
+					var x = document.getElementById("myInput");
+					if (x.type=="password") 
+					{
+						x.type="text";
+					}
+					else{ x.type="password";}
+				}
+			</script>
+			
+		<button type="submit">Sign up <a href="preset.html"></a></button>
+
+		</div>
+
+		
+	    </div>
+
+		
+
+	    
+
+
+
+
+	<p> To know more about Photography related  your Interest click on below image and you will know more about how to click perfect photo,it includes about angle,lighting,timing and many more.You always don't need an expensive camera for a better photography ,you just need a knowledge of composition.And  Here,You will see a collection of Photograph related to Sunrise/Sunset Photography ,Architect photography,Animal Photography,Plant Photography,Landscape Photography and also a Product Photography,So that You can learn from  those Photograph.</p>
+	<p> Motive of our Website is to guide and help those beginner and Amateur photographer who is trying to make their career on photograph and earn some good.We provide knowledge about lighting,angle,composition and many more components that afffect photography .On Our site ,We have categorized different photos into different group like,landscape,animal/pet ,flower,architecture,sunset photography and so on.there are lots of albums of photos on different group.</p>
+
+    <div class="column">
+	<a href="s.html">
+         
+		<img src="sp.jpg" height=300 width=400 >
+         
+		<h2>SUNRISE/SUNSET</h2></a>
+	</div>
+		
+	
+
+	<div class="column">
+	<a href="a.html" >
+         
+		<img src="le.jpg" height="300" width="400" >
+		<h2>ARCHITECTURE</h2></a>
+    </div>
+	
+	<div class="column">
+	<a href="pr.html"><img src = "prd.jpg" height=300 width=400><h2>PRODUCT</h2></a>
+    </div>
+
+	<div class="column">
+	<a href="fl.html"><img src="flw.jpg" height="300" width="400"> <h2>PLANT/FLOWER</h2></a>
+    </div>
+
+	<div class="column">
+	<a href="l.html"><img src="ls.jpg" height="300" width="400"><h2>LANDSCAPE</h2></a>
+    </div>
+
+	<div class="column">
+	<a href="anim.html"><img src="ct.jpg" height="300" width="400"><h2>ANIMAL/WILDLIFE</h2></a>
+	 </div>
+
+   
+    <h3>Thank You For scrolling down to the bottom.😁😁😀😀
+	</h3>
+
+	<div class="icon">
+	 <strong> LIKE US : </strong><br>
+
+	 <a href="https://fb.me/Unstableme02" class="fa fa-facebook" target="new" title="Facebook"></a>
+
+	 <a href="https://www.instagram.com/unstableme02" class="fa fa-instagram" target="new" title="Instagram"></a> 
+
+
+	 <a href="https://www.twitter.com/unstableme02" class="fa fa-twitter" target="new" title="Twitter"></a>
+
+
+
+
+	</div>
+
+	<h4><i>	  If you love the content of our website ,You can help us by donating from given link:</i> <a href="https://esewa.com.np/#/make_payment/BALTXN/Fund%20Transfer" target="new">eSewa</a> </h4>
+
+	
+	 	 
+
+
+<footer><b>Copyright©Unstable Photography|All Rights Reserved.</b></footer>
+</div>
+</body>
+</html>
